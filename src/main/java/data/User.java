@@ -89,11 +89,10 @@ public class User {
         this.status = status;
     }
 
-    public static User randomUser() {
+    public static User randomUser() throws ParseException {
         User person = new User();
         Faker faker = new Faker(new Locale("ES"));
-        Date birth = faker.date().birthday();
-
+        LocalDate randomDate = createRandomDate(1960, 2000);
         int ramdomN = faker.number().numberBetween(0, 1);
         String sexGender;
         String locStatus;
@@ -108,12 +107,23 @@ public class User {
         person.setFirst_name(faker.name().firstName());
         person.setLast_name(faker.name().lastName());
         person.setGender(sexGender);
-        person.setDob(birth.toString());
+        person.setDob(randomDate.toString());
         person.setEmail(faker.internet().emailAddress());
-        person.setPhone(faker.phoneNumber().toString());
+        person.setPhone(faker.phoneNumber().phoneNumber());
         person.setAddress(faker.address().fullAddress());
         person.setStatus(locStatus);
         return person;
+    }
+
+    private static int createRandomIntBetween(int start, int end) {
+        return start + (int) Math.round(Math.random() * (end - start));
+    }
+
+    private static LocalDate createRandomDate(int startYear, int endYear) {
+        int day = createRandomIntBetween(1, 28);
+        int month = createRandomIntBetween(1, 12);
+        int year = createRandomIntBetween(startYear, endYear);
+        return LocalDate.of(year, month, day);
     }
 
     @Override
@@ -129,4 +139,5 @@ public class User {
                 ", status='" + status + '\'' +
                 '}';
     }
+
 }
