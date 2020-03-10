@@ -1,26 +1,36 @@
 package data;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.github.javafaker.Faker;
-import java.lang.reflect.Member;
-import java.text.DateFormat;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.Locale;
-import java.util.Random;
 
 public class User {
 
 
+    @JsonProperty("first_name")
     private String first_name;
+
+    @JsonProperty("last_name")
     private String last_name;
+
+    @JsonProperty("gender")
     private String gender;
+
+    @JsonProperty("dob")
     private String dob;
+
+    @JsonProperty("email")
     private String email;
+
+    @JsonProperty("phone")
     private String phone;
+
+    @JsonProperty("address")
     private String address;
+
+    @JsonProperty("status")
     private String status;
 
     public User() {}

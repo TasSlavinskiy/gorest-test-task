@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1747a51d-ccda-4950-8dd6-9f69b0e2c433" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/Convert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/data/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/GoRestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GoRestTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GoRestTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GoRestTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +35,11 @@
     </option>
   </component>
   <component name="ProjectId" id="1YcdKPEo4le2oVRrEx4JSwX9IVB" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -49,6 +56,17 @@
     </option>
   </component>
   <component name="RunManager" selected="TestNG.GoRestTest.createNewUser">
+    <configuration name="GoRestTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test.task.gorest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GoRestTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GoRestTest.createNewUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test.task.gorest" />
       <option name="PACKAGE_NAME" value="" />
@@ -76,6 +94,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.GoRestTest.createNewUser" />
+        <item itemvalue="TestNG.GoRestTest" />
         <item itemvalue="TestNG.GoRestTest.getListAllUsers" />
       </list>
     </recent_temporary>
@@ -103,5 +122,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
